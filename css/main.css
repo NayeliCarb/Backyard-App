@@ -1,3 +1,14 @@
+button {
+  -webkit-animation-name: example;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: 3;
+  /* Chrome, Safari, Opera */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3; }
+
 ul li {
   list-style-type: none;
   text-decoration: none;
@@ -90,6 +101,9 @@ ul li {
   #iconos .icon {
     margin-left: 10%; }
 
+footer {
+  margin-bottom: 3%; }
+
 @media (min-width: 0px) and (max-width: 767px) {
   header img {
     width: 100%; }
@@ -107,5 +121,26 @@ ul li {
     margin-top: 10%; }
     #iconos .icon {
       margin-left: 8%; } }
+@keyframes example {
+  0% {
+    background-color: #EABDDB;
+    left: 0px;
+    top: 0px; }
+  25% {
+    background-color: #AE65D8;
+    left: 200px;
+    top: 0px; }
+  50% {
+    background-color: #3FCAF2;
+    left: 200px;
+    top: 200px; }
+  75% {
+    background-color: #3FF276;
+    left: 0px;
+    top: 200px; }
+  100% {
+    background-color: #F2C23F;
+    left: 0px;
+    top: 0px; } }
 
 /*# sourceMappingURL=main.css.map */

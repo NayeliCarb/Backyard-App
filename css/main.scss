@@ -1,6 +1,15 @@
 $color:#1BB3DF;
 $pos: center;
 $width:100%;
+
+button{
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 3; /* Chrome, Safari, Opera */
+     animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
 ul {
     li{
 	list-style-type: none;
@@ -57,7 +66,7 @@ ul {
 .marg{
     margin-left: -80%;
     margin-top: 2%;
-        margin-bottom: 2%;
+    margin-bottom: 2%;
 }
 
 #prsecc{
@@ -68,9 +77,6 @@ ul {
         width: $width;
         margin-top: 2%;
         padding: 10%;
-    }
-    h2{
-        
     }
 }
 #secc{
@@ -109,9 +115,13 @@ ul {
 #iconos{
     margin-left: 40%;
     margin-top: 10%;
+
     .icon{
     margin-left: 10%;
     }
+}
+footer{
+    margin-bottom: 3%;
 }
 
 @media (min-width: 0px) and (max-width : 767px) {
@@ -134,8 +144,17 @@ ul {
     #iconos{
     margin-left: 20%;
     margin-top: 10%;
-    .icon{
-    margin-left: 8%;
+        
+        .icon{
+        margin-left: 8%;
+        }
     }
 }
+
+@keyframes example {
+    0%   {background-color:#EABDDB; left:0px; top:0px;}
+    25%  {background-color:#AE65D8; left:200px; top:0px;}
+    50%  {background-color:#3FCAF2; left:200px; top:200px;}
+    75%  {background-color:#3FF276; left:0px; top:200px;}
+    100% {background-color:#F2C23F; left:0px; top:0px;}
 }
