@@ -1,0 +1,141 @@
+$color:#1BB3DF;
+$pos: center;
+$width:100%;
+ul {
+    li{
+	list-style-type: none;
+	text-decoration: none;
+	display: inline-block;
+    }
+}
+.bgimagen{
+	background-image: url("C:/Users/Alumna/Desktop/nayez/images/1920x665-1.jpg");
+	background-size: 120% 100%;
+}
+.text1 {
+    width: $width;
+    height: 0px;
+    background-color: transparent;
+    padding: 10px;
+    position: absolute;
+    top:-30em;
+    left:0px;
+    z-index: 1;
+    color: white;
+ 	margin-left: 7%;
+}
+ 
+.background {
+    width: $width;
+    height: 410px;
+    background-color: black;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+}
+ 
+.trans {
+    opacity: 0.5;
+    position: relative;
+    top:5px;
+    left: 0px;
+}
+.btnFea{
+	background-color: transparent;
+	border-color: $color;
+	border-radius: 20px;
+}
+.btnFea:hover{
+	background-color: $color;
+	color: white;
+}
+#bg-trans h1{
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+.marg{
+    margin-left: -80%;
+    margin-top: 2%;
+        margin-bottom: 2%;
+}
+
+#prsecc{
+    margin-top: 5%;
+
+
+    img{
+        width: $width;
+        margin-top: 2%;
+        padding: 10%;
+    }
+    h2{
+        
+    }
+}
+#secc{
+    background-color: #F3EDED;
+    margin-bottom: 5%;
+}
+#sec{
+    background-color: #EBECED;
+
+}
+#sdaSeccion{
+    text-align: $pos;
+}
+#trcseccion{
+
+    img{
+        width: $width;
+        padding: 10%;
+    }
+}
+.boton_red{
+  border-radius: $width;
+  width: 2.5em;
+  height: 2.5em;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  border: 1px solid $color;
+  
+
+  i{
+    color: $color;
+  }
+}
+
+#iconos{
+    margin-left: 40%;
+    margin-top: 10%;
+    .icon{
+    margin-left: 10%;
+    }
+}
+
+@media (min-width: 0px) and (max-width : 767px) {
+    header{
+        img{
+            width: 100%;
+        }
+    }
+    
+    .marg{
+        margin-left: -15%;
+    }
+
+    ul li{
+        font-size: smaller;
+        margin-left: -12%;
+        margin-top: 5%;
+    }
+
+    #iconos{
+    margin-left: 20%;
+    margin-top: 10%;
+    .icon{
+    margin-left: 8%;
+    }
+}
+}
